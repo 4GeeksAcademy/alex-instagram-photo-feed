@@ -30,9 +30,10 @@
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   Create new post
                 </button>
-                
+
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
@@ -41,12 +42,18 @@
                       </div>
                       <div class="modal-body">
                         <p>Caption</p>
-                        <textarea name="modal-txt" id="modal-txt" placeholder="Add the caption of your post here" style="width: 100%;"></textarea>
+                        <textarea name="modal-txt" id="modal-txt" placeholder="Add the caption of your post here"
+                          style="width: 100%;"></textarea>
+                      </div>
+                      <div class="modal-buttons">
+                        <i class="fa-solid fa-camera p-3"></i>
+                        <i class="fa-solid fa-location-dot p-3"></i>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" class="btn btn-primary">Save changes</button>
                       </div>
+
                     </div>
                   </div>
                 </div>
@@ -57,7 +64,7 @@
                 aria-expanded="false">
                 <i class="fa-solid fa-gear fa-lg"></i>
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Accesibility</a></li>
                 <li><a class="dropdown-item" href="#">Privacy and data</a></li>
@@ -90,397 +97,399 @@
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
           tabindex="0">
           <div class="row m-1">
-            <div class="col-4"><img class="img-fluid" style="object-fit: cover;"
+            <div class="col-4"><img class="img-fluid w-100 h-100" style="object-fit: cover;"
                 src="https://fastly.picsum.photos/id/455/300/200.jpg?hmac=lC2v1eMx7_tUCM8FLd1H9DbMOZD1dWG0ktHiTR9BBxQ"
                 alt="">
             </div>
-            <div class="col-4"><img class="img-fluid"
+            <div class="col-4"><img class="img-fluid w-100 h-100"
                 src="https://fastly.picsum.photos/id/628/300/200.jpg?hmac=BbTpjdZSo4YD9eKwpBmII80iZpJSnH8qC9blP1DmG50"
                 alt="">
             </div>
-            <div class="col-4"><img class="img-fluid"
+            <div class="col-4"><img class="img-fluid w-100 h-100"
                 src="https://fastly.picsum.photos/id/472/300/200.jpg?hmac=8mzEAFGSWoGJCAhPWWzIM9NE-6KPODlkk7Tb6rbcO_w"
                 alt="">
             </div>
           </div>
           <div class="row m-1 ">
-            <div class="col-4"><img class="img-fluid"
+            <div class="col-4"><img class="img-fluid w-100 h-100"
                 src="https://fastly.picsum.photos/id/292/300/200.jpg?hmac=LQfqXcgAN_g_pG10J4W4PKexTViv4dqaTiP8bjdPbJQ"
                 alt="">
             </div>
-            <div class="col-4"><img class="img-fluid"
+            <div class="col-4"><img class="img-fluid w-100 h-100"
                 src="https://fastly.picsum.photos/id/838/300/200.jpg?hmac=Bzuap8l2RDrQbqTrk3p375c3FyaAtIZo118Atyktyfc"
                 alt="">
             </div>
-            <div class="col-4"><img class="img-fluid"
+            <div class="col-4"><img class="img-fluid w-100 h-100"
                 src="https://fastly.picsum.photos/id/514/300/200.jpg?hmac=pP308DB_q4I1zdpTCtpUBmzrlj4_oORKxw6XRbktTug"
                 alt="">
             </div>
           </div>
           <div class="row m-1">
-            <div class="col-4"><img class="img-fluid"
+            <div class="col-4"><img class="img-fluid w-100 h-100"
                 src="https://fastly.picsum.photos/id/434/300/200.jpg?hmac=d_lsZvugLf5FBhJEHlA5W64vrusUmH_xFFt8zruga-E"
                 alt="">
             </div>
-            <div class="col-4"><img class="img-fluid"
+            <div class="col-4"><img class="img-fluid w-100 h-100"
                 src="https://fastly.picsum.photos/id/633/300/200.jpg?hmac=cRYYFONERdtzAEhTSVWbBL76hUhdpzzvDV1hGJw6ycw"
                 alt="">
             </div>
-            <div class="col-4"><img class="img-fluid"
+            <div class="col-4"><img class="img-fluid w-100 h-100"
                 src="https://fastly.picsum.photos/id/938/300/200.jpg?hmac=_Y4L1BGafXV8FF89xIZ71qTbRSau0CNsZE62LsYNFeY"
                 alt="">
             </div>
           </div>
         </div>
-        <div class="tab-pane fade d-flex flex-column align-items-center justify-content-center" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </div>
               </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/455/300/200.jpg?hmac=lC2v1eMx7_tUCM8FLd1H9DbMOZD1dWG0ktHiTR9BBxQ"
+                  alt="post-img">
+              </div>
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
+                </div>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+                </div>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
+                </div>
               </div>
             </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/455/300/200.jpg?hmac=lC2v1eMx7_tUCM8FLd1H9DbMOZD1dWG0ktHiTR9BBxQ"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
                 </div>
               </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/628/300/200.jpg?hmac=BbTpjdZSo4YD9eKwpBmII80iZpJSnH8qC9blP1DmG50"
+                  alt="post-img">
               </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
-              </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/628/300/200.jpg?hmac=BbTpjdZSo4YD9eKwpBmII80iZpJSnH8qC9blP1DmG50"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
                 </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
                 </div>
-              </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
-              </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
               </div>
             </div>
-          </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </div>
               </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/472/300/200.jpg?hmac=8mzEAFGSWoGJCAhPWWzIM9NE-6KPODlkk7Tb6rbcO_w"
+                  alt="post-img">
+              </div>
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
+                </div>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+                </div>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
+                </div>
               </div>
             </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/472/300/200.jpg?hmac=8mzEAFGSWoGJCAhPWWzIM9NE-6KPODlkk7Tb6rbcO_w"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
                 </div>
               </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/292/300/200.jpg?hmac=LQfqXcgAN_g_pG10J4W4PKexTViv4dqaTiP8bjdPbJQ"
+                  alt="post-img">
               </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
-              </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/292/300/200.jpg?hmac=LQfqXcgAN_g_pG10J4W4PKexTViv4dqaTiP8bjdPbJQ"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
                 </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
                 </div>
-              </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
-              </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
               </div>
             </div>
-          </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </div>
               </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/838/300/200.jpg?hmac=Bzuap8l2RDrQbqTrk3p375c3FyaAtIZo118Atyktyfc"
+                  alt="post-img">
+              </div>
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
+                </div>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+                </div>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
+                </div>
               </div>
             </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/838/300/200.jpg?hmac=Bzuap8l2RDrQbqTrk3p375c3FyaAtIZo118Atyktyfc"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
                 </div>
               </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/514/300/200.jpg?hmac=pP308DB_q4I1zdpTCtpUBmzrlj4_oORKxw6XRbktTug"
+                  alt="post-img">
               </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
-              </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/514/300/200.jpg?hmac=pP308DB_q4I1zdpTCtpUBmzrlj4_oORKxw6XRbktTug"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
                 </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
                 </div>
-              </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
-              </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
               </div>
             </div>
-          </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                </div>
               </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/434/300/200.jpg?hmac=d_lsZvugLf5FBhJEHlA5W64vrusUmH_xFFt8zruga-E"
+                  alt="post-img">
+              </div>
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
+                </div>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+                </div>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
+                </div>
               </div>
             </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/434/300/200.jpg?hmac=d_lsZvugLf5FBhJEHlA5W64vrusUmH_xFFt8zruga-E"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
                 </div>
               </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/633/300/200.jpg?hmac=cRYYFONERdtzAEhTSVWbBL76hUhdpzzvDV1hGJw6ycw"
+                  alt="post-img">
               </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
-              </div>
-            </div>
-          </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
-              </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/633/300/200.jpg?hmac=cRYYFONERdtzAEhTSVWbBL76hUhdpzzvDV1hGJw6ycw"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
                 </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
                 </div>
-              </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
-              </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
               </div>
             </div>
-          </div>
-          <div class="post">
-            <div class="post-header">
-              <div class="user-info-container">
-                <div class="profile-pic">
-                  <i class="fa-solid fa-user fa-2x"></i>
+            <div class="post">
+              <div class="post-header">
+                <div class="user-info-container">
+                  <div class="profile-pic">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                  </div>
+                  <div class="username"> HTML5 <br> Rigoberto</div>
                 </div>
-                <div class="username"> HTML5 <br> Rigoberto</div>
-              </div>
-              <div class="more-section">
-                <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
-              </div>
-            </div>
-            <div class="img-container">
-              <img
-                src="https://fastly.picsum.photos/id/938/300/200.jpg?hmac=_Y4L1BGafXV8FF89xIZ71qTbRSau0CNsZE62LsYNFeY"
-                alt="post-img">
-            </div>
-            <div class="post-info">
-              <div class="icons-container">
-                <div class="icons-left">
-                  <i class="fa-regular fa-heart fa-lg"></i>
-                  <i class="fa-regular fa-comment fa-lg"></i>
-                  <i class="fa-regular fa-paper-plane fa-lg"></i>
-                </div>
-                <div class="icons-right">
-                  <i class="fa-regular fa-bookmark fa-lg"></i>
+                <div class="more-section">
+                  <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
                 </div>
               </div>
-              <div class="post-likes">
-                <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+              <div class="img-container">
+                <img
+                  src="https://fastly.picsum.photos/id/938/300/200.jpg?hmac=_Y4L1BGafXV8FF89xIZ71qTbRSau0CNsZE62LsYNFeY"
+                  alt="post-img">
               </div>
-              <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
-                reprehenderit
-                reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
-                consequuntur
-                ipsam placeat beatae consequatur.
+              <div class="post-info">
+                <div class="icons-container">
+                  <div class="icons-left">
+                    <i class="fa-regular fa-heart fa-lg"></i>
+                    <i class="fa-regular fa-comment fa-lg"></i>
+                    <i class="fa-regular fa-paper-plane fa-lg"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="fa-regular fa-bookmark fa-lg"></i>
+                  </div>
+                </div>
+                <div class="post-likes">
+                  <p>Liked by 4GeeksAcademy, html5, Web and 100,000 others</p>
+                </div>
+                <div class="post-caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores
+                  reprehenderit
+                  reiciendis dolorem nobis impedit perspiciatis qui non esse, totam, ex maxime hic neque debitis
+                  consequuntur
+                  ipsam placeat beatae consequatur.
+                </div>
               </div>
             </div>
           </div>
